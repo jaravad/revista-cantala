@@ -6,7 +6,7 @@ import ArticlePreview from './components/ArticlePreview'
 
 function App() {
   return (
-    <>
+    <div>
       <Container maxWidth="md" sx={{ pt: 2 }}>
         <Grid container spacing={2}>
           {news.map((n) => {
@@ -18,7 +18,7 @@ function App() {
           })}
         </Grid>
       </Container>
-    </>
+    </div>
   )
 }
 
