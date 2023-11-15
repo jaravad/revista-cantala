@@ -1,6 +1,7 @@
 import React from 'react'
 import { AppBar, Box, Button, Toolbar } from '@mui/material'
 import logo from '../assets/logo.png'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
@@ -17,7 +18,9 @@ export default function Header() {
             minHeight: 'unset',
           }}
         >
-          <img src={logo} alt="" width="200" />
+          <Link to="/">
+            <img src={logo} alt="" width="200" />
+          </Link>
         </Toolbar>
       </AppBar>
       <Box
