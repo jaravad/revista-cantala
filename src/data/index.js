@@ -24,6 +24,8 @@ import Victor from '../entrepeneurship/Victor'
 import victorImg from '../assets/entrepeneurship/victor/2.png'
 import marcoImg from '../assets/opinion/marco/1.png'
 import MarcoOpinion from '../opinion/MarcoOpinion'
+import marcoNewsImg from '../assets/news/marco/1.png'
+import MarcoNews from '../news/MarcoNews'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -79,6 +81,13 @@ export const news = [
     id: 'seleccion-colombia',
     author: authors.fabian,
     previewImage: colombia,
+  },
+  {
+    component: MarcoNews,
+    title: 'Cayó uno de los integrantes de la banda llamada “los pachenca”',
+    id: 'integrante-de-los-pachenca-capturado',
+    author: authors.marco,
+    previewImage: marcoNewsImg,
   },
 ]
 
