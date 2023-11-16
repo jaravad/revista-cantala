@@ -10,7 +10,7 @@ import CrisFair from '../entrepeneurship/CrisFair'
 import Char from '../opinion/Char'
 import char from '../assets/char.jpeg'
 import Fair from '../entrepeneurship/Fair'
-import bag from '../assets/entrepeneurship/vale/7.jpeg'
+import bag from '../assets/entrepeneurship/vale/2.jpeg'
 import crisFair from '../assets/entrepeneurship/cris/3.jpeg'
 import Elections from '../news/Elections'
 import FabianOpinion from '../opinion/FabianOpinion'
@@ -20,6 +20,8 @@ import Melany from '../entrepeneurship/Melany'
 import melanyImg from '../assets/opinion/melany/1.jpeg'
 import Fabian from '../news/Fabian'
 import colombia from '../assets/news/fabian/1.jpeg'
+import Victor from '../entrepeneurship/Victor'
+import victorImg from '../assets/entrepeneurship/victor/2.png'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -115,5 +117,12 @@ export const entrepeneurship = [
     id: 'feria-de-emprendimiento-caribe',
     author: authors.vale,
     previewImage: bag,
+  },
+  {
+    component: Victor,
+    title: 'Esculturas en Porcelana que Despiertan Emociones',
+    id: 'arte-en-porcelana',
+    author: authors.victor,
+    previewImage: victorImg,
   },
 ]

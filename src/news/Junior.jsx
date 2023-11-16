@@ -21,8 +21,7 @@ const Junior = () => {
       <Box mb={2}>
         <img src={junior} alt="Cariaco" style={{ maxWidth: '100%' }} />
         <Typography variant="caption">
-          Luis ‘Cariaco’ González intentando eludir a jugadores del
-          Huila.Jeisson Gutiérrez
+          Luis ‘Cariaco’ González intentando eludir a jugadores del Huila
         </Typography>
       </Box>
       <Typography paragraph>
