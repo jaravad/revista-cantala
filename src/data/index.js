@@ -22,6 +22,8 @@ import Fabian from '../news/Fabian'
 import colombia from '../assets/news/fabian/1.jpeg'
 import Victor from '../entrepeneurship/Victor'
 import victorImg from '../assets/entrepeneurship/victor/2.png'
+import marcoImg from '../assets/opinion/marco/1.png'
+import MarcoOpinion from '../opinion/MarcoOpinion'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -32,6 +34,7 @@ export const authors = {
   aura: 'Aura Maria Marimon Riquett',
   fabian: 'Fabian Bovea',
   victor: 'Victor Roa',
+  marco: 'Marco Castro',
 }
 
 export const news = [
@@ -100,6 +103,13 @@ export const opinion = [
     id: 'barranquilla-es-investigacion',
     author: authors.melany,
     previewImage: melanyImg,
+  },
+  {
+    component: MarcoOpinion,
+    title: 'La lucha de Barranquilla contra las inundaciones',
+    id: 'inundaciones-en-barranquilla',
+    author: authors.marco,
+    previewImage: marcoImg,
   },
 ]
 
