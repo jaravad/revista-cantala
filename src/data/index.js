@@ -18,6 +18,8 @@ import fabianOpinion from '../assets/opinion/fabian/1.jpeg'
 import orlandoNews from '../assets/news/orlando/1.jpeg'
 import Melany from '../entrepeneurship/Melany'
 import melanyImg from '../assets/opinion/melany/1.jpeg'
+import Fabian from '../news/Fabian'
+import colombia from '../assets/news/fabian/1.jpeg'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -65,6 +67,13 @@ export const news = [
     id: 'elecciones-en-barranquilla',
     author: authors.orlando,
     previewImage: orlandoNews,
+  },
+  {
+    component: Fabian,
+    title: 'La Selección Colombia y su Clasificación para el Mundial 2026',
+    id: 'seleccion-colombia',
+    author: authors.fabian,
+    previewImage: colombia,
   },
 ]
 
