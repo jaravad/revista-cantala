@@ -12,6 +12,9 @@ import {
   responsiveFontSizes,
 } from '@mui/material/styles'
 import './styles.css'
+import News from './views/News.jsx'
+import Opinion from './views/Opinion.jsx'
+import Infographics from './views/Infographics.jsx'
 
 let theme = createTheme({
   palette: {
@@ -35,7 +38,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<App />}></Route>
+          <Route path="/" element={<App />} />
+          <Route path="/noticias" element={<News />} />
+          <Route path="/opinion" element={<Opinion />} />
+          <Route path="/infografias" element={<Infographics />} />
           {news.map(({ id, component: Component }) => {
             return <Route path={id} element={<Component />} key={id} />
           })}

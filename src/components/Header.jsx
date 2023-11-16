@@ -1,9 +1,10 @@
 import React from 'react'
 import { AppBar, Box, Button, Toolbar } from '@mui/material'
 import logo from '../assets/logo.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function Header() {
+  const navigate = useNavigate()
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
@@ -31,9 +32,27 @@ export default function Header() {
         py={1}
         boxShadow="0 3px 3px 0 rgba(0, 0, 0, 0.05)"
       >
-        <Button>Noticias</Button>
-        <Button>Opinión</Button>
-        <Button>Infografías</Button>
+        <Button
+          onClick={() => {
+            navigate('/noticias')
+          }}
+        >
+          Noticias
+        </Button>
+        <Button
+          onClick={() => {
+            navigate('/opinion')
+          }}
+        >
+          Opinión
+        </Button>
+        <Button
+          onClick={() => {
+            navigate('/infografias')
+          }}
+        >
+          Infografías
+        </Button>
       </Box>
     </Box>
   )
