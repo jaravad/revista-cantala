@@ -26,6 +26,8 @@ import marcoImg from '../assets/opinion/marco/1.png'
 import MarcoOpinion from '../opinion/MarcoOpinion'
 import marcoNewsImg from '../assets/news/marco/1.png'
 import MarcoNews from '../news/MarcoNews'
+import MarcoFair from '../entrepeneurship/MarcoFair'
+import victorFairImg from '../assets/entrepeneurship/marco/1.png'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -143,5 +145,13 @@ export const entrepeneurship = [
     id: 'arte-en-porcelana',
     author: authors.victor,
     previewImage: victorImg,
+  },
+  {
+    component: MarcoFair,
+    title: 'KidsJoy, emprendimiento para la estimulación adecuada para bebés',
+    id: 'emprendimiento-kidsjoy',
+    author: authors.marco,
+    previewImage: victorFairImg,
+    imgStyles: { objectPosition: 'top center' },
   },
 ]
