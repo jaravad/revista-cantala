@@ -4,6 +4,7 @@ import Title from '../components/Title'
 import { Typography } from '@mui/material'
 import AuthorLine from '../components/AuthorLine'
 import { authors } from '../data'
+import Subheader from '../components/Subheader'
 
 const Elections = () => {
   return (
@@ -13,9 +14,11 @@ const Elections = () => {
         Gobernación con Tendencias Claras
       </Title>
       <AuthorLine>{authors.orlando}</AuthorLine>
-      La ciudad de Barranquilla se encuentra inmersa en la emoción de las
-      elecciones a la alcaldía y gobernación, con un proceso que promete definir
-      el futuro político y social de la región.
+      <Subheader>
+        La ciudad de Barranquilla se encuentra inmersa en la emoción de las
+        elecciones a la alcaldía y gobernación, con un proceso que promete
+        definir el futuro político y social de la región.
+      </Subheader>
       <Typography paragraph>
         A medida que se acerca la fecha de votación, se vislumbran tendencias
         claras y una gran participación de la comunidad.

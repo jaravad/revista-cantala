@@ -20,7 +20,7 @@ function App() {
         })}
       </Grid>
       <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
-        <Typography variant="h4">Opinión</Typography>
+        <Typography variant="h4">Columna</Typography>
       </Box>
       <Grid container spacing={2} mb={6}>
         {opinion.map((n) => {

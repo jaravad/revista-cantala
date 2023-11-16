@@ -11,7 +11,11 @@ import Char from '../opinion/Char'
 import char from '../assets/char.jpeg'
 import Fair from '../entrepeneurship/Fair'
 import bag from '../assets/entrepeneurship/vale/bag.png'
-import crisFair from '../assets/entrepeneurship/cris/2.jpeg'
+import crisFair from '../assets/entrepeneurship/cris/3.jpeg'
+import Elections from '../news/Elections'
+import FabianOpinion from '../opinion/FabianOpinion'
+import fabianOpinion from '../assets/opinion/fabian/1.jpeg'
+import orlandoNews from '../assets/news/orlando/1.jpeg'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -21,6 +25,7 @@ export const authors = {
   melany: 'Melany Cortés Padilla',
   aura: 'Aura Maria Marimon Riquett',
   fabian: 'Fabian Bovea',
+  victor: 'Victor Roa',
 }
 
 export const news = [
@@ -52,6 +57,13 @@ export const news = [
     author: authors.vale,
     previewImage: junior,
   },
+  {
+    component: Elections,
+    title: 'Recta Final de Elecciones a Alcaldía y Gobernación',
+    id: 'elecciones-en-barranquilla',
+    author: authors.orlando,
+    previewImage: orlandoNews,
+  },
 ]
 
 export const opinion = [
@@ -61,6 +73,13 @@ export const opinion = [
     id: 'char-anuncia-nuevo-secretario',
     author: authors.vale,
     previewImage: char,
+  },
+  {
+    component: FabianOpinion,
+    title: 'El papel de la tecnología en la educación',
+    id: 'tecnologia-en-la-educacion',
+    author: authors.fabian,
+    previewImage: fabianOpinion,
   },
 ]
 
