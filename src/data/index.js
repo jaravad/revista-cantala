@@ -10,12 +10,14 @@ import CrisFair from '../entrepeneurship/CrisFair'
 import Char from '../opinion/Char'
 import char from '../assets/char.jpeg'
 import Fair from '../entrepeneurship/Fair'
-import bag from '../assets/entrepeneurship/vale/bag.png'
+import bag from '../assets/entrepeneurship/vale/7.jpeg'
 import crisFair from '../assets/entrepeneurship/cris/3.jpeg'
 import Elections from '../news/Elections'
 import FabianOpinion from '../opinion/FabianOpinion'
 import fabianOpinion from '../assets/opinion/fabian/1.jpeg'
 import orlandoNews from '../assets/news/orlando/1.jpeg'
+import Melany from '../entrepeneurship/Melany'
+import melanyImg from '../assets/opinion/melany/1.jpeg'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -80,6 +82,13 @@ export const opinion = [
     id: 'tecnologia-en-la-educacion',
     author: authors.fabian,
     previewImage: fabianOpinion,
+  },
+  {
+    component: Melany,
+    title: 'Barranquilla es Investigación',
+    id: 'barranquilla-es-investigacion',
+    author: authors.melany,
+    previewImage: melanyImg,
   },
 ]
 
