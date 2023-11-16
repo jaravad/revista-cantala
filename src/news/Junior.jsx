@@ -3,18 +3,21 @@ import { Box, Typography } from '@mui/material'
 import junior from '../assets/junior.png'
 import ArticleWrapper from '../components/ArticleWrapper'
 import AuthorLine from '../components/AuthorLine'
+import { authors } from '../data'
+import Title from '../components/Title'
+import Subheader from '../components/Subheader'
 
 const Junior = () => {
   return (
     <ArticleWrapper>
-      <Typography mb={1} variant="h3" fontWeight={500}>
+      <Title>
         Junior, con el apoyo de 'Cariaco', vuela a los cuadrangulares
-      </Typography>
-      <AuthorLine name="Valentina Uribe" />
-      <Typography variant="h6" fontWeight={300} mb={2}>
+      </Title>
+      <AuthorLine>{authors.vale}</AuthorLine>
+      <Subheader>
         El futbolista agradeció el esfuerzo de sus compañeros por la
         clasificación del equipo a los cuadrangulares.
-      </Typography>
+      </Subheader>
       <Box mb={2}>
         <img src={junior} alt="Cariaco" style={{ maxWidth: '100%' }} />
         <Typography variant="caption">

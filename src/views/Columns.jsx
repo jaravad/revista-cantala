@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Opinion = () => {
+const Columns = () => {
   return <div>Opinion</div>
 }
 
-export default Opinion
+export default Columns

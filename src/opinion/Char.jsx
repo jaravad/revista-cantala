@@ -3,15 +3,17 @@ import ArticleWrapper from '../components/ArticleWrapper'
 import { Box, Typography } from '@mui/material'
 import char from '../assets/char.jpeg'
 import AuthorLine from '../components/AuthorLine'
+import { authors } from '../data'
+import Title from '../components/Title'
 
 const Char = () => {
   return (
     <ArticleWrapper>
-      <Typography mb={2} variant="h3" fontWeight={500}>
+      <Title>
         Alejandro Char anuncia su equipo de trabajo: Rafael Lafont de Sales como
         secretario de Infraestructura
-      </Typography>
-      <AuthorLine name="Valentina Uribe" />
+      </Title>
+      <AuthorLine>{authors.vale}</AuthorLine>
       <Box mb={3}>
         <img src={char} alt="Cariaco" style={{ maxWidth: '100%' }} />
         <Typography variant="caption">

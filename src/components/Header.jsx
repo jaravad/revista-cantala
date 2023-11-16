@@ -41,10 +41,17 @@ export default function Header() {
         </Button>
         <Button
           onClick={() => {
-            navigate('/opinion')
+            navigate('/columna')
           }}
         >
-          Opinión
+          Columna
+        </Button>
+        <Button
+          onClick={() => {
+            navigate('/emprendimiento')
+          }}
+        >
+          Emprendimiento
         </Button>
         <Button
           onClick={() => {

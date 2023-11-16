@@ -3,14 +3,16 @@ import { Box, Typography } from '@mui/material'
 import arroyo from '../assets/arroyo.jpeg'
 import ArticleWrapper from '../components/ArticleWrapper'
 import AuthorLine from '../components/AuthorLine'
+import Title from '../components/Title'
+import { authors } from '../data'
 
 const Floodings = () => {
   return (
     <ArticleWrapper>
-      <Typography mb={1} variant="h3" fontWeight={500}>
+      <Title>
         Motociclista fue arrastrado por fuerte arroyo en Barranquilla
-      </Typography>
-      <AuthorLine name="Melany Cortés Padilla" />
+      </Title>
+      <AuthorLine>{authors.melany}</AuthorLine>
       <Box mb={2}>
         <img src={arroyo} alt="Cariaco" style={{ maxWidth: '100%' }} />
       </Box>

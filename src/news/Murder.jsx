@@ -3,14 +3,14 @@ import { Box, Typography } from '@mui/material'
 import AuthorLine from '../components/AuthorLine'
 import ArticleWrapper from '../components/ArticleWrapper'
 import murder from '../assets/murder.jpeg'
+import Title from '../components/Title'
+import { authors } from '../data'
 
 const Murder = () => {
   return (
     <ArticleWrapper>
-      <Typography mb={1} variant="h3" fontWeight={500}>
-        Reportan asesinato en el centro de Barranquilla
-      </Typography>
-      <AuthorLine name="Yerika Hernández" />
+      <Title>Reportan asesinato en el centro de Barranquilla</Title>
+      <AuthorLine>{authors.yerika}</AuthorLine>
       <Box mb={2}>
         <img src={murder} alt="Cariaco" style={{ maxWidth: '100%' }} />
       </Box>

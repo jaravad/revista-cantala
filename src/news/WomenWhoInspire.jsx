@@ -2,18 +2,19 @@ import React from 'react'
 import { Typography } from '@mui/material'
 import ArticleWrapper from '../components/ArticleWrapper'
 import AuthorLine from '../components/AuthorLine'
+import Title from '../components/Title'
+import { authors } from '../data'
+import Subheader from '../components/Subheader'
 
 const WomenWhoInspire = () => {
   return (
     <ArticleWrapper>
-      <Typography mb={1} variant="h3" fontWeight={500}>
-        Mujeres que inspiran
-      </Typography>
-      <AuthorLine name="Cristian Alvarez" />
-      <Typography variant="h6" fontWeight={300} mb={2}>
+      <Title>Mujeres que inspiran</Title>
+      <AuthorLine>{authors.cris}</AuthorLine>
+      <Subheader>
         "Soy una mujer apasionada por su carrera, amo contar historias y hoy
         tengo la fortuna de hacerlo a través de esta corona"
-      </Typography>
+      </Subheader>
       <Typography paragraph>
         Quien era Yuruby antes de ser reina, era un chica amante de su carrera,
         fanática de contar historias y siempre llevar este patrimonio por cual
