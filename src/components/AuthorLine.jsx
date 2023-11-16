@@ -3,7 +3,7 @@ import React from 'react'
 
 const AuthorLine = ({ name }) => {
   return (
-    <Typography variant="body1" mb={2}>
+    <Typography variant="body1" mb={2} component="span" display="inline-block">
       Por <strong>{name}</strong>
     </Typography>
   )

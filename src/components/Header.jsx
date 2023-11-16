@@ -6,7 +6,7 @@ import { Link, useNavigate } from 'react-router-dom'
 export default function Header() {
   const navigate = useNavigate()
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }} className="fade-animate">
       <AppBar
         position="static"
         color="transparent"

@@ -51,8 +51,7 @@ export const opinion = [
   },
   {
     component: Char,
-    title:
-      'Primer secretario nombrado por el alcalde electo de Barranquilla, Alejandro Char',
+    title: 'Primer secretario nombrado por Alejandro Char',
     id: 'char-anuncia-nuevo-secretario',
     author: 'Valentina Uribe',
     previewImage: char,

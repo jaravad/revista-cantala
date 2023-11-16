@@ -6,7 +6,7 @@ import ArticlePreview from './components/ArticlePreview'
 
 function App() {
   return (
-    <Container maxWidth="lg" sx={{ pt: 4 }}>
+    <Container maxWidth="lg" sx={{ py: 4 }} className="fade-animate">
       <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
         <Typography variant="h4">Noticias</Typography>
       </Box>

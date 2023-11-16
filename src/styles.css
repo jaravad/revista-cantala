@@ -8,7 +8,7 @@ body {
 
 .fade-animate {
   opacity: 0%;
-  animation: fade 300ms ease;
+  animation: fade 300ms ease-in-out;
   animation-fill-mode: forwards;
 }
 

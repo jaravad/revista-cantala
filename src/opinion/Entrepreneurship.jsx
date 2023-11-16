@@ -1,12 +1,17 @@
 import React from 'react'
 import ArticleWrapper from '../components/ArticleWrapper'
 import { Typography } from '@mui/material'
+import AuthorLine from '../components/AuthorLine'
 
 const Entrepreneurship = () => {
   return (
     <ArticleWrapper>
       <Typography mb={1} variant="h3" fontWeight={500}>
         Emprendiendo desde el saber
+      </Typography>
+      <AuthorLine name="Valentina Uribe " />
+      <Typography component="span" variant="body1">
+        - 9 de noviembre
       </Typography>
       <Typography paragraph>
         El pasado jueves, hicimos parte de una actividad realizada en el marco
