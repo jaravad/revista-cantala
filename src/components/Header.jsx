@@ -33,6 +33,7 @@ export default function Header() {
       >
         <Button>Noticias</Button>
         <Button>Opinión</Button>
+        <Button>Infografías</Button>
       </Box>
     </Box>
   )

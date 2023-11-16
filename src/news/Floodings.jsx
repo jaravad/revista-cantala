@@ -1,12 +1,19 @@
 import React from 'react'
-import { Container, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
+import arroyo from '../assets/arroyo.jpeg'
+import ArticleWrapper from '../components/ArticleWrapper'
+import AuthorLine from '../components/AuthorLine'
 
 const Floodings = () => {
   return (
-    <Container maxWidth="md" sx={{ py: 2 }}>
-      <Typography mb={1} variant="h2" fontWeight={500}>
+    <ArticleWrapper>
+      <Typography mb={1} variant="h3" fontWeight={500}>
         Motociclista fue arrastrado por fuerte arroyo en Barranquilla
       </Typography>
+      <AuthorLine name="Melany Cortés Padilla" />
+      <Box mb={2}>
+        <img src={arroyo} alt="Cariaco" style={{ maxWidth: '100%' }} />
+      </Box>
       <Typography paragraph>
         Un motociclista se salvó de milagro luego de ser arrastrado por un
         arroyo en Barranquilla, las fuertes lluvias azotaron la ciudad la tarde
@@ -23,7 +30,7 @@ const Floodings = () => {
         a esas personas que pudieron salvarme. Y fueron las que me devolvieron
         la vida prácticamente", aseguró el hombre.
       </Typography>
-    </Container>
+    </ArticleWrapper>
   )
 }
 

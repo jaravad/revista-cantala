@@ -1,12 +1,15 @@
 import React from 'react'
-import { Container, Typography } from '@mui/material'
+import { Typography } from '@mui/material'
+import ArticleWrapper from '../components/ArticleWrapper'
+import AuthorLine from '../components/AuthorLine'
 
 const WomenWhoInspire = () => {
   return (
-    <Container maxWidth="md" sx={{ pt: 2 }}>
-      <Typography mb={1} variant="h2" fontWeight={500}>
+    <ArticleWrapper>
+      <Typography mb={1} variant="h3" fontWeight={500}>
         Mujeres que inspiran
       </Typography>
+      <AuthorLine name="Cristian Alvarez" />
       <Typography variant="h6" fontWeight={300} mb={2}>
         "Soy una mujer apasionada por su carrera, amo contar historias y hoy
         tengo la fortuna de hacerlo a través de esta corona"
@@ -38,7 +41,7 @@ const WomenWhoInspire = () => {
         del carnaval de Barranquilla y ahora porto la corona como Reina popular,
         llevando el nombre de cada barrio por estas fiestas.
       </Typography>
-    </Container>
+    </ArticleWrapper>
   )
 }
 

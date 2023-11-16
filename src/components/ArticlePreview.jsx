@@ -31,7 +31,7 @@ export default function ArticlePreview({ id, title, previewImage, author }) {
           <Typography variant="caption">
             Por <strong>{author}</strong>
           </Typography>
-          <Typography variant="subtitle1" component="div">
+          <Typography variant="subtitle1" component="div" lineHeight={1.5}>
             {title}
           </Typography>
           {/* <Typography variant="body2" color="text.secondary">

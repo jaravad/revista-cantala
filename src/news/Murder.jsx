@@ -1,12 +1,19 @@
 import React from 'react'
-import { Container, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
+import AuthorLine from '../components/AuthorLine'
+import ArticleWrapper from '../components/ArticleWrapper'
+import murder from '../assets/murder.jpeg'
 
 const Murder = () => {
   return (
-    <Container maxWidth="md" sx={{ pt: 2 }}>
-      <Typography mb={1} variant="h2" fontWeight={500}>
+    <ArticleWrapper>
+      <Typography mb={1} variant="h3" fontWeight={500}>
         Reportan asesinato en el centro de Barranquilla
       </Typography>
+      <AuthorLine name="Yerika Hernández" />
+      <Box mb={2}>
+        <img src={murder} alt="Cariaco" style={{ maxWidth: '100%' }} />
+      </Box>
       <Typography paragraph>
         Los hechos ocurriendo en la tarde de este jueves, 26 de octubre.
         Reportan que una de las víctimas se encontraba en el centro comercial
@@ -27,7 +34,7 @@ const Murder = () => {
         una rápida acción lograron capturar al supuesto asesino a quien le
         incautaron un arma de fuego.
       </Typography>
-    </Container>
+    </ArticleWrapper>
   )
 }
 

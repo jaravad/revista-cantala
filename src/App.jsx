@@ -1,24 +1,37 @@
 import React from 'react'
-import { Container } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
-import { news } from './data'
+import { news, opinion } from './data'
 import ArticlePreview from './components/ArticlePreview'
 
 function App() {
   return (
-    <div>
-      <Container maxWidth="md" sx={{ pt: 2 }}>
-        <Grid container spacing={2}>
-          {news.map((n) => {
-            return (
-              <Grid key={n.id} xs={4}>
-                <ArticlePreview {...n} />
-              </Grid>
-            )
-          })}
-        </Grid>
-      </Container>
-    </div>
+    <Container maxWidth="lg" sx={{ pt: 4 }}>
+      <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
+        <Typography variant="h4">Noticias</Typography>
+      </Box>
+      <Grid container spacing={2} mb={6}>
+        {news.map((n) => {
+          return (
+            <Grid key={n.id} xs={6} sm={4} md={3}>
+              <ArticlePreview {...n} />
+            </Grid>
+          )
+        })}
+      </Grid>
+      <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
+        <Typography variant="h4">Opinión</Typography>
+      </Box>
+      <Grid container spacing={2} mb={6}>
+        {opinion.map((n) => {
+          return (
+            <Grid key={n.id} xs={6} sm={4} md={3}>
+              <ArticlePreview {...n} />
+            </Grid>
+          )
+        })}
+      </Grid>
+    </Container>
   )
 }
 
