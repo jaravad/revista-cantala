@@ -11,7 +11,7 @@ const YerikaInterview = () => {
   return (
     <ArticleWrapper>
       <Title>Mujeres que inspiran: Reinado Popular</Title>
-      <AuthorLine>{authors.yerika}</AuthorLine>
+      <AuthorLine>{authors.cris}</AuthorLine>
       <Subheader>
         Hoy será el cierre de inscripciones al certamen más importante realizado
         en el marco del carnaval de Barranquilla, en donde una Carnavalera en

@@ -8,6 +8,7 @@ import {
   interviews,
   news,
   opinion,
+  reportaje,
 } from './data'
 import ArticlePreview from './components/ArticlePreview'
 import SectionHeader from './components/SectionHeader'
@@ -15,11 +16,19 @@ import SectionHeader from './components/SectionHeader'
 function App() {
   return (
     <Container maxWidth="lg" sx={{ py: 4 }} className="fade-animate">
-      <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
-        <Typography variant="h4">Noticias</Typography>
-      </Box>
+      <SectionHeader>Reportaje</SectionHeader>
       <Grid container spacing={2} mb={6}>
-        {news.map((n) => {
+        {reportaje.map((n) => {
+          return (
+            <Grid key={n.id} xs={6} sm={4} md={3}>
+              <ArticlePreview {...n} />
+            </Grid>
+          )
+        })}
+      </Grid>
+      <SectionHeader>Entrevistas</SectionHeader>
+      <Grid container spacing={2} mb={6}>
+        {interviews.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>
               <ArticlePreview {...n} />
@@ -32,6 +41,18 @@ function App() {
       </Box>
       <Grid container spacing={2} mb={6}>
         {opinion.map((n) => {
+          return (
+            <Grid key={n.id} xs={6} sm={4} md={3}>
+              <ArticlePreview {...n} />
+            </Grid>
+          )
+        })}
+      </Grid>
+      <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
+        <Typography variant="h4">Noticias</Typography>
+      </Box>
+      <Grid container spacing={2} mb={6}>
+        {news.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>
               <ArticlePreview {...n} />
@@ -69,16 +90,6 @@ function App() {
       </Box>
       <Grid container spacing={2} mb={6}>
         {infographics.map((n) => {
-          return (
-            <Grid key={n.id} xs={6} sm={4} md={3}>
-              <ArticlePreview {...n} />
-            </Grid>
-          )
-        })}
-      </Grid>
-      <SectionHeader>Entrevistas</SectionHeader>
-      <Grid container spacing={2} mb={6}>
-        {interviews.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>
               <ArticlePreview {...n} />

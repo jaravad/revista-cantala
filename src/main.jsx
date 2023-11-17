@@ -25,6 +25,7 @@ import Infographics from './views/Infographics.jsx'
 import Entrepeneurship from './views/Entrepeneurship.jsx'
 import Interviews from './views/Interviews.jsx'
 import Critica from './views/Critica.jsx'
+import Reportaje from './views/Reportaje.jsx'
 
 let theme = createTheme({
   palette: {
@@ -55,6 +56,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/infografias" element={<Infographics />} />
           <Route path="/entrevistas" element={<Interviews />} />
           <Route path="/critica" element={<Critica />} />
+          <Route path="/reportaje" element={<Reportaje />} />
           {news.map(({ id, component: Component }) => {
             return <Route path={id} element={<Component />} key={id} />
           })}

@@ -112,6 +112,13 @@ export const news = [
     author: authors.victor,
     previewImage: victorNewsImg,
   },
+  {
+    component: YerikaInterview,
+    id: 'reinado-popular',
+    title: 'Mujeres que inspiran: Reinado Popular',
+    author: authors.cris,
+    previewImage: yerikaImg,
+  },
 ]
 
 export const opinion = [
@@ -136,6 +143,9 @@ export const opinion = [
     author: authors.melany,
     previewImage: melanyImg,
   },
+]
+
+export const reportaje = [
   {
     component: MarcoOpinion,
     title: 'La lucha de Barranquilla contra las inundaciones',
@@ -202,13 +212,6 @@ export const interviews = [
     title: 'Mujeres que inspiran: Yuruby Mendoza Ricardo',
     author: authors.cris,
     previewImage: women,
-  },
-  {
-    component: YerikaInterview,
-    id: 'reinado-popular',
-    title: 'Mujeres que inspiran: Reinado Popular',
-    author: authors.yerika,
-    previewImage: yerikaImg,
   },
 ]
 

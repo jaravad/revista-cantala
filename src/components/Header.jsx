@@ -75,6 +75,13 @@ export default function Header() {
         >
           Entrevistas
         </Button>
+        <Button
+          onClick={() => {
+            navigate('/reportaje')
+          }}
+        >
+          Reportaje
+        </Button>
       </Box>
     </Box>
   )
