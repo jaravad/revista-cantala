@@ -19,7 +19,7 @@ const Section = ({ name, array }) => {
               container
               justifyContent="center"
             >
-              <Grid>
+              <Grid flexGrow={1}>
                 <ArticlePreview {...n} />
               </Grid>
             </Grid>
