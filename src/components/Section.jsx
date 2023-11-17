@@ -1,22 +1,21 @@
 import React from 'react'
-import ArticlePreview from '../components/ArticlePreview'
-import { critica } from '../data'
-import ArticleWrapper from '../components/ArticleWrapper'
-import SectionHeader from '../components/SectionHeader'
+import SectionHeader from './SectionHeader'
 import { Unstable_Grid2 as Grid } from '@mui/material'
+import ArticlePreview from './ArticlePreview'
 
-const Critica = () => {
+const Section = ({ name, array }) => {
   return (
-    <ArticleWrapper>
-      <SectionHeader>Critica</SectionHeader>
+    <>
+      <SectionHeader>{name}</SectionHeader>
       <Grid container spacing={2} mb={6} justifyContent="center">
-        {critica.map((n) => {
+        {array.map((n) => {
           return (
             <Grid
               key={n.id}
               xs={12}
               sm={6}
               md={4}
+              lg={3}
               container
               justifyContent="center"
             >
@@ -27,8 +26,8 @@ const Critica = () => {
           )
         })}
       </Grid>
-    </ArticleWrapper>
+    </>
   )
 }
 
-export default Critica
+export default Section

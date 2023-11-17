@@ -49,6 +49,8 @@ import MelanyFair from '../entrepeneurship/MelanyFair'
 import melanyFairImg from '../assets/entrepeneurship/melany/1.png'
 import orlandoFairImg from '../assets/entrepeneurship/orlando/2.png'
 import OrlandoFair from '../entrepeneurship/OrlandoFair'
+import AuraEditorial from '../editorial/AuraEditorial'
+import marimonda from '../assets/editorial/1.jpeg'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -162,11 +164,16 @@ export const opinionColumn = [
 
 export const editorial = [
   {
-    component: Char,
-    title: 'Primer secretario nombrado por Alejandro Char',
-    id: 'char-anuncia-nuevo-secretario',
+    component: AuraEditorial,
+    title: 'Nuestra Editorial',
+    id: 'editorial-barranquilla',
     author: authors.aura,
-    previewImage: char,
+    previewImage: marimonda,
+    imgStyles: {
+      objectPosition: 'top center',
+      width: '80%',
+      alignSelf: 'center',
+    },
   },
 ]
 

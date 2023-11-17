@@ -14,8 +14,17 @@ const News = () => {
       <Grid container spacing={2} mb={6}>
         {news.map((n) => {
           return (
-            <Grid key={n.id} xs={6} sm={4}>
-              <ArticlePreview {...n} />
+            <Grid
+              key={n.id}
+              xs={12}
+              sm={6}
+              md={4}
+              container
+              justifyContent="center"
+            >
+              <Grid>
+                <ArticlePreview {...n} />
+              </Grid>
             </Grid>
           )
         })}

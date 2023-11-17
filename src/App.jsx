@@ -1,9 +1,10 @@
 import React from 'react'
-import { Box, Container, Typography } from '@mui/material'
-import Grid from '@mui/material/Unstable_Grid2'
+import { Container } from '@mui/material'
+
 import {
   critica,
   cronica,
+  editorial,
   entrepeneurship,
   infographics,
   interviews,
@@ -13,127 +14,29 @@ import {
   opinionColumn,
   reportaje,
 } from './data'
-import ArticlePreview from './components/ArticlePreview'
-import SectionHeader from './components/SectionHeader'
+
+import Section from './components/Section'
+
+const categories = [
+  { name: 'Noticias', array: news },
+  { name: 'Crónica', array: cronica },
+  { name: 'Reportaje', array: reportaje },
+  { name: 'Entrevistas', array: interviews },
+  { name: 'Columna', array: opinion },
+  { name: 'Columna de opinión', array: opinionColumn },
+  { name: 'Editorial', array: editorial },
+  { name: 'Emprendimiento', array: entrepeneurship },
+  { name: 'Crítica', array: critica },
+  { name: 'Infografías', array: infographics },
+  { name: 'Columna de Investigación', array: investigacion },
+]
 
 function App() {
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }} className="fade-animate">
-      <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
-        <Typography variant="h4">Noticias</Typography>
-      </Box>
-      <Grid container spacing={2} mb={6} justifyContent="center">
-        {news.map((n) => {
-          return (
-            <Grid key={n.id} xs={6} sm={4} md={3}>
-              <ArticlePreview {...n} />
-            </Grid>
-          )
-        })}
-      </Grid>
-      <SectionHeader>Crónica</SectionHeader>
-      <Grid container spacing={2} mb={6} justifyContent="center">
-        {cronica.map((n) => {
-          return (
-            <Grid key={n.id} xs={6} sm={4} md={3}>
-              <ArticlePreview {...n} />
-            </Grid>
-          )
-        })}
-      </Grid>
-      <SectionHeader>Reportaje</SectionHeader>
-      <Grid container spacing={2} mb={6} justifyContent="center">
-        {reportaje.map((n) => {
-          return (
-            <Grid key={n.id} xs={6} sm={4} md={3}>
-              <ArticlePreview {...n} />
-            </Grid>
-          )
-        })}
-      </Grid>
-      <SectionHeader>Entrevistas</SectionHeader>
-      <Grid container spacing={2} mb={6} justifyContent="center">
-        {interviews.map((n) => {
-          return (
-            <Grid key={n.id} xs={6} sm={4} md={3}>
-              <ArticlePreview {...n} />
-            </Grid>
-          )
-        })}
-      </Grid>
-      <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
-        <Typography variant="h4">Columna</Typography>
-      </Box>
-      <Grid container spacing={2} mb={6} justifyContent="center">
-        {opinion.map((n) => {
-          return (
-            <Grid key={n.id} xs={6} sm={4} md={3}>
-              <ArticlePreview {...n} />
-            </Grid>
-          )
-        })}
-      </Grid>
-      <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
-        <Typography variant="h4">Columna de opinión</Typography>
-      </Box>
-      <Grid container spacing={2} mb={6} justifyContent="center">
-        {opinionColumn.map((n) => {
-          return (
-            <Grid key={n.id} xs={6} sm={4} md={3}>
-              <ArticlePreview {...n} />
-            </Grid>
-          )
-        })}
-      </Grid>
-
-      <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
-        <Typography variant="h4">Emprendimiento</Typography>
-      </Box>
-      <Grid container spacing={2} mb={6} justifyContent="center">
-        {entrepeneurship.map((n) => {
-          return (
-            <Grid key={n.id} xs={6} sm={4} md={3}>
-              <ArticlePreview {...n} />
-            </Grid>
-          )
-        })}
-      </Grid>
-      <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
-        <Typography variant="h4">Crítica</Typography>
-      </Box>
-      <Grid container spacing={2} mb={6} justifyContent="center">
-        {critica.map((n) => {
-          return (
-            <Grid key={n.id} xs={6} sm={4} md={3}>
-              <ArticlePreview {...n} />
-            </Grid>
-          )
-        })}
-      </Grid>
-      <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
-        <Typography variant="h4">Infografías</Typography>
-      </Box>
-      <Grid container spacing={2} mb={6} justifyContent="center">
-        {infographics.map((n) => {
-          return (
-            <Grid key={n.id} xs={6} sm={4} md={3}>
-              <ArticlePreview {...n} />
-            </Grid>
-          )
-        })}
-      </Grid>
-      <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
-        <Typography variant="h4">Columna de Investigación</Typography>
-      </Box>
-      <Grid container spacing={2} mb={6} justifyContent="center">
-        {investigacion.map((n) => {
-          return (
-            <Grid key={n.id} xs={6} sm={4} md={3}>
-              <ArticlePreview {...n} />
-            </Grid>
-          )
-        })}
-      </Grid>
+    <Container maxWidth="lg" sx={{ pt: 4, pb: 8 }} className="fade-animate">
+      {categories.map((c) => {
+        return <Section key={c.name} {...c} />
+      })}
     </Container>
   )
 }

@@ -6,6 +6,7 @@ import Header from './components/Header.jsx'
 import {
   critica,
   cronica,
+  editorial,
   entrepeneurship,
   infographics,
   interviews,
@@ -32,6 +33,7 @@ import Reportaje from './views/Reportaje.jsx'
 import Investigacion from './views/Investigacion.jsx'
 import OpinionColumns from './views/OpinionColumns.jsx'
 import Cronica from './views/Cronica.jsx'
+import Editorial from './views/Editorial.jsx'
 
 let theme = createTheme({
   palette: {
@@ -48,6 +50,28 @@ let theme = createTheme({
 })
 
 theme = responsiveFontSizes(theme)
+
+// const categories = [
+//   { name: 'Noticias', array: news, path: '/noticias' },
+//   { name: 'Crónica', array: cronica, path: '/cronica' },
+//   { name: 'Reportaje', array: reportaje, path: '/reportaje' },
+//   { name: 'Entrevistas', array: interviews, path: '/entrevistas' },
+//   { name: 'Columna', array: opinion, path: '/columna' },
+//   {
+//     name: 'Columna de opinión',
+//     array: opinionColumn,
+//     path: '/columna-de-opinion',
+//   },
+//   { name: 'Editorial', array: editorial, path: '/editorial' },
+//   { name: 'Emprendimiento', array: entrepeneurship, path: '/emprendimiento' },
+//   { name: 'Crítica', array: critica, path: '/critica' },
+//   { name: 'Infografías', array: infographics, path: '/infografias' },
+//   {
+//     name: 'Columna de Investigación',
+//     array: investigacion,
+//     path: '/investigacion',
+//   },
+// ]
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -66,6 +90,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/critica" element={<Critica />} />
           <Route path="/reportaje" element={<Reportaje />} />
           <Route path="/investigacion" element={<Investigacion />} />
+          <Route path="/editorial" element={<Editorial />} />
 
           {cronica.map(({ id, component: Component }) => {
             return <Route path={id} element={<Component />} key={id} />
@@ -92,6 +117,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             return <Route path={id} element={<Component />} key={id} />
           })}
           {investigacion.map(({ id, component: Component }) => {
+            return <Route path={id} element={<Component />} key={id} />
+          })}
+          {editorial.map(({ id, component: Component }) => {
             return <Route path={id} element={<Component />} key={id} />
           })}
           <Route path="*" element={<App />}></Route>
