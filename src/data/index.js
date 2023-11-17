@@ -38,6 +38,8 @@ import VictorNews from '../news/VictorNews'
 import victorNewsImg from '../assets/news/victor/1.png'
 import YerikaInterview from '../interviews/YerikaInterview'
 import yerikaImg from '../assets/interviews/yerika/1.jpeg'
+import VictorCritica from '../critica/VictorCritica'
+import victorCriticaImg from '../assets/critica/victor/1.jpeg'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -207,5 +209,16 @@ export const interviews = [
     title: 'Mujeres que inspiran: Reinado Popular',
     author: authors.yerika,
     previewImage: yerikaImg,
+  },
+]
+
+export const critica = [
+  {
+    component: VictorCritica,
+    id: 'cobertura-en-el-mundial-de-futbol',
+    title:
+      'La Cobertura de los Medios en el Mundial de Fútbol: Enfoque en lo Sensacional en Lugar de lo Deportivo',
+    author: authors.victor,
+    previewImage: victorCriticaImg,
   },
 ]

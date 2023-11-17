@@ -56,6 +56,13 @@ export default function Header() {
         </Button>
         <Button
           onClick={() => {
+            navigate('/critica')
+          }}
+        >
+          Crítica
+        </Button>
+        <Button
+          onClick={() => {
             navigate('/infografias')
           }}
         >

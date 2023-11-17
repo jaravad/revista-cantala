@@ -4,6 +4,7 @@ import { Routes, Route, Outlet, BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import Header from './components/Header.jsx'
 import {
+  critica,
   entrepeneurship,
   infographics,
   interviews,
@@ -23,6 +24,7 @@ import Columns from './views/Columns.jsx'
 import Infographics from './views/Infographics.jsx'
 import Entrepeneurship from './views/Entrepeneurship.jsx'
 import Interviews from './views/Interviews.jsx'
+import Critica from './views/Critica.jsx'
 
 let theme = createTheme({
   palette: {
@@ -52,6 +54,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/emprendimiento" element={<Entrepeneurship />} />
           <Route path="/infografias" element={<Infographics />} />
           <Route path="/entrevistas" element={<Interviews />} />
+          <Route path="/critica" element={<Critica />} />
           {news.map(({ id, component: Component }) => {
             return <Route path={id} element={<Component />} key={id} />
           })}
@@ -65,6 +68,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             return <Route path={id} element={<Component />} key={id} />
           })}
           {interviews.map(({ id, component: Component }) => {
+            return <Route path={id} element={<Component />} key={id} />
+          })}
+          {critica.map(({ id, component: Component }) => {
             return <Route path={id} element={<Component />} key={id} />
           })}
           <Route path="*" element={<App />}></Route>
