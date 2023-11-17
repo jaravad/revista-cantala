@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Link, Typography } from '@mui/material'
 import React from 'react'
 import ArticleWrapper from '../components/ArticleWrapper'
 import AuthorLine from '../components/AuthorLine'
@@ -11,12 +11,23 @@ const YerikaCronica = () => {
     <ArticleWrapper>
       <Title>Pasión y resiliencia, el legado de Alejandra Villafañe</Title>
       <AuthorLine>{authors.yerika}</AuthorLine>
-      <Box mb={3}>
+      <Box mb={3} textAlign="center">
         <img
           src={mainImg}
           alt="Alejandra Villafañe"
           style={{ maxWidth: '100%' }}
         />
+
+        <Typography variant="caption" display="block">
+          Imagen tomada de: Instagram{' '}
+          <Link
+            href="https://www.instagram.com/alejavillafane/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            @alejavillafane
+          </Link>
+        </Typography>
       </Box>
       <Typography paragraph>
         Alejandra Villafañe, una talentosa actriz colombiana, dejó una profunda

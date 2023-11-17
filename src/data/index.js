@@ -42,6 +42,7 @@ import VictorCritica from '../critica/VictorCritica'
 import victorCriticaImg from '../assets/critica/victor/1.jpeg'
 import YerikaCronica from '../cronica/YerikaCronica'
 import yerikaCronicaImg from '../assets/cronica/yerika/1.png'
+import AuraFair from '../entrepeneurship/Aurafair'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -153,6 +154,16 @@ export const opinionColumn = [
   },
 ]
 
+export const editorial = [
+  {
+    component: Char,
+    title: 'Primer secretario nombrado por Alejandro Char',
+    id: 'char-anuncia-nuevo-secretario',
+    author: authors.aura,
+    previewImage: char,
+  },
+]
+
 export const reportaje = [
   {
     component: MarcoOpinion,
@@ -200,6 +211,12 @@ export const entrepeneurship = [
     author: authors.fabian,
     previewImage: fabianFairImg,
     imgStyles: { objectPosition: 'top center' },
+  },
+  {
+    component: AuraFair,
+    title: 'Marca de Ropa de Monica y Sara',
+    id: 'emprendimiento-monica-y-sara',
+    author: authors.aura,
   },
 ]
 
