@@ -3,7 +3,13 @@ import ReactDOM from 'react-dom/client'
 import { Routes, Route, Outlet, BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import Header from './components/Header.jsx'
-import { entrepeneurship, infographics, news, opinion } from './data'
+import {
+  entrepeneurship,
+  infographics,
+  interviews,
+  news,
+  opinion,
+} from './data'
 
 import { red } from '@mui/material/colors'
 import {
@@ -16,6 +22,7 @@ import News from './views/News.jsx'
 import Columns from './views/Columns.jsx'
 import Infographics from './views/Infographics.jsx'
 import Entrepeneurship from './views/Entrepeneurship.jsx'
+import Interviews from './views/Interviews.jsx'
 
 let theme = createTheme({
   palette: {
@@ -44,6 +51,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/columna" element={<Columns />} />
           <Route path="/emprendimiento" element={<Entrepeneurship />} />
           <Route path="/infografias" element={<Infographics />} />
+          <Route path="/entrevistas" element={<Interviews />} />
           {news.map(({ id, component: Component }) => {
             return <Route path={id} element={<Component />} key={id} />
           })}
@@ -54,6 +62,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             return <Route path={id} element={<Component />} key={id} />
           })}
           {infographics.map(({ id, component: Component }) => {
+            return <Route path={id} element={<Component />} key={id} />
+          })}
+          {interviews.map(({ id, component: Component }) => {
             return <Route path={id} element={<Component />} key={id} />
           })}
           <Route path="*" element={<App />}></Route>

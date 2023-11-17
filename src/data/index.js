@@ -1,6 +1,6 @@
 import Floodings from '../news/Floodings'
 import Murder from '../news/Murder'
-import WomenWhoInspire from '../news/WomenWhoInspire'
+import WomenWhoInspire from '../interviews/WomenWhoInspire'
 import arroyo from '../assets/arroyo.jpeg'
 import murder from '../assets/murder.jpeg'
 import women from '../assets/women.png'
@@ -32,6 +32,8 @@ import orlandoImg from '../assets/infographics/orlando/1.jpeg'
 import Orlando from '../infographics/Orlando'
 import Aura from '../news/Aura'
 import auraImg from '../assets/news/aura/1.jpeg'
+import FabianFair from '../entrepeneurship/FabianFair'
+import fabianFairImg from '../assets/entrepeneurship/fabian/1.png'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -46,13 +48,6 @@ export const authors = {
 }
 
 export const news = [
-  {
-    component: WomenWhoInspire,
-    id: 'mujeres-que-inspiran',
-    title: 'Mujeres que inspiran',
-    author: authors.cris,
-    previewImage: women,
-  },
   {
     component: Murder,
     title: 'Reportan asesinato en el centro de Barranquilla',
@@ -98,7 +93,7 @@ export const news = [
 
   {
     component: Aura,
-    title: 'Y si, como ya escucharon...Maluma sera Papa',
+    title: 'Y si, como ya escucharon... Maluma será Papa',
     id: 'maluma-sera-papa',
     author: authors.aura,
     previewImage: auraImg,
@@ -166,6 +161,14 @@ export const entrepeneurship = [
     previewImage: victorFairImg,
     imgStyles: { objectPosition: 'top center' },
   },
+  {
+    component: FabianFair,
+    title: 'Dulce Bendición K&G: Endulzando la Vida Universitaria',
+    id: 'emprendimiento-dulce-bendicion',
+    author: authors.fabian,
+    previewImage: fabianFairImg,
+    imgStyles: { objectPosition: 'top center' },
+  },
 ]
 
 export const infographics = [
@@ -175,5 +178,15 @@ export const infographics = [
     id: 'barranquilla-ciudad-de-la-alegria',
     author: authors.orlando,
     previewImage: orlandoImg,
+  },
+]
+
+export const interviews = [
+  {
+    component: WomenWhoInspire,
+    id: 'mujeres-que-inspiran',
+    title: 'Mujeres que inspiran',
+    author: authors.cris,
+    previewImage: women,
   },
 ]

@@ -1,8 +1,15 @@
 import React from 'react'
 import { Box, Container, Typography } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
-import { entrepeneurship, infographics, news, opinion } from './data'
+import {
+  entrepeneurship,
+  infographics,
+  interviews,
+  news,
+  opinion,
+} from './data'
 import ArticlePreview from './components/ArticlePreview'
+import SectionHeader from './components/SectionHeader'
 
 function App() {
   return (
@@ -49,6 +56,16 @@ function App() {
       </Box>
       <Grid container spacing={2} mb={6}>
         {infographics.map((n) => {
+          return (
+            <Grid key={n.id} xs={6} sm={4} md={3}>
+              <ArticlePreview {...n} />
+            </Grid>
+          )
+        })}
+      </Grid>
+      <SectionHeader>Entrevistas</SectionHeader>
+      <Grid container spacing={2} mb={6}>
+        {interviews.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>
               <ArticlePreview {...n} />

@@ -60,6 +60,13 @@ export default function Header() {
         >
           Infografías
         </Button>
+        <Button
+          onClick={() => {
+            navigate('/entrevistas')
+          }}
+        >
+          Entrevistas
+        </Button>
       </Box>
     </Box>
   )

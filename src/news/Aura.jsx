@@ -9,7 +9,7 @@ import { authors } from '../data'
 const Aura = () => {
   return (
     <ArticleWrapper>
-      <Title>Y si, como ya escucharon...Maluma sera Papa</Title>
+      <Title>Y si, como ya escucharon... Maluma sera Papa</Title>
       <AuthorLine>{authors.aura}</AuthorLine>
       <Box mb={2}>
         <img src={mainImg} alt="Maluma" style={{ maxWidth: '100%' }} />
@@ -21,9 +21,9 @@ const Aura = () => {
         hicieron saber la noticia por un concierto realizado en Chile el pasado
         10 de septiembre, sus seguidores se han unido a esta excelente noticia
         tomndolo con toda la acepción y apoyo hacia el cantante en esta nueva
-        etapa que cruza junto a su pareja Susana Gomez. !Felicidades en este
-        nuevo reto!
+        etapa que cruza junto a su pareja Susana Gomez.
       </Typography>
+      <Typography paragraph>!Felicidades en este nuevo reto!</Typography>
     </ArticleWrapper>
   )
 }
