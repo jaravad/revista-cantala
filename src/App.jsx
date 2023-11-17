@@ -6,6 +6,7 @@ import {
   entrepeneurship,
   infographics,
   interviews,
+  investigacion,
   news,
   opinion,
   reportaje,
@@ -90,6 +91,18 @@ function App() {
       </Box>
       <Grid container spacing={2} mb={6}>
         {infographics.map((n) => {
+          return (
+            <Grid key={n.id} xs={6} sm={4} md={3}>
+              <ArticlePreview {...n} />
+            </Grid>
+          )
+        })}
+      </Grid>
+      <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
+        <Typography variant="h4">Investigación</Typography>
+      </Box>
+      <Grid container spacing={2} mb={6}>
+        {investigacion.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>
               <ArticlePreview {...n} />

@@ -136,13 +136,6 @@ export const opinion = [
     author: authors.fabian,
     previewImage: fabianOpinion,
   },
-  {
-    component: Melany,
-    title: 'Barranquilla es Investigación',
-    id: 'barranquilla-es-investigacion',
-    author: authors.melany,
-    previewImage: melanyImg,
-  },
 ]
 
 export const reportaje = [
@@ -223,5 +216,15 @@ export const critica = [
       'La Cobertura de los Medios en el Mundial de Fútbol: Enfoque en lo Sensacional en Lugar de lo Deportivo',
     author: authors.victor,
     previewImage: victorCriticaImg,
+  },
+]
+
+export const investigacion = [
+  {
+    component: Melany,
+    title: 'Barranquilla es Investigación',
+    id: 'barranquilla-es-investigacion',
+    author: authors.melany,
+    previewImage: melanyImg,
   },
 ]
