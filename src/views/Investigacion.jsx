@@ -8,7 +8,7 @@ import ArticlePreview from '../components/ArticlePreview'
 const Investigacion = () => {
   return (
     <ArticleWrapper>
-      <SectionHeader>Investigacion</SectionHeader>
+      <SectionHeader>Columna de Investigacion</SectionHeader>
       <Grid container spacing={2} mb={6}>
         {investigacion.map((n) => {
           return (

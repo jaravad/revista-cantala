@@ -66,7 +66,7 @@ export default function Header() {
             navigate('/columna-de-opinion')
           }}
         >
-          Columna de opinión
+          Opinión
         </Button>
         <Button
           onClick={() => {
@@ -95,6 +95,13 @@ export default function Header() {
           }}
         >
           Reportaje
+        </Button>
+        <Button
+          onClick={() => {
+            navigate('/investigacion')
+          }}
+        >
+          Investigacion
         </Button>
       </Box>
     </Box>

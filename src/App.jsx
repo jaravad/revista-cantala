@@ -112,7 +112,7 @@ function App() {
         })}
       </Grid>
       <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
-        <Typography variant="h4">Investigación</Typography>
+        <Typography variant="h4">Columna de Investigación</Typography>
       </Box>
       <Grid container spacing={2} mb={6}>
         {investigacion.map((n) => {
