@@ -30,6 +30,8 @@ import MarcoFair from '../entrepeneurship/MarcoFair'
 import victorFairImg from '../assets/entrepeneurship/marco/1.png'
 import orlandoImg from '../assets/infographics/orlando/1.jpeg'
 import Orlando from '../infographics/Orlando'
+import Aura from '../news/Aura'
+import auraImg from '../assets/news/aura/1.jpeg'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -92,6 +94,14 @@ export const news = [
     id: 'integrante-de-los-pachenca-capturado',
     author: authors.marco,
     previewImage: marcoNewsImg,
+  },
+
+  {
+    component: Aura,
+    title: 'Y si, como ya escucharon...Maluma sera Papa',
+    id: 'maluma-sera-papa',
+    author: authors.aura,
+    previewImage: auraImg,
   },
 ]
 
