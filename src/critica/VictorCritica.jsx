@@ -15,7 +15,7 @@ const VictorCritica = () => {
       </Title>
       <AuthorLine>{authors.victor}</AuthorLine>
       <Box mb={2}>
-        <img src={mainImg} alt="Messi" style={{ maxWidth: '100%' }} />
+        <img src={mainImg} alt="Messi" style={{ width: '100%' }} />
       </Box>
       <Typography paragraph>
         Crítica: La cobertura mediática del Mundial de Fútbol 2022 ha dejado
