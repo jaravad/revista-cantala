@@ -1,10 +1,11 @@
 import React from 'react'
 import ArticleWrapper from '../components/ArticleWrapper'
 import Title from '../components/Title'
-import { Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import AuthorLine from '../components/AuthorLine'
 import { authors } from '../data'
 import Subheader from '../components/Subheader'
+import mainImg from '../assets/news/orlando/1.jpeg'
 
 const Elections = () => {
   return (
@@ -19,6 +20,9 @@ const Elections = () => {
         elecciones a la alcaldía y gobernación, con un proceso que promete
         definir el futuro político y social de la región.
       </Subheader>
+      <Box mb={3}>
+        <img src={mainImg} alt="Elecciones" style={{ maxWidth: '100%' }} />
+      </Box>
       <Typography paragraph>
         A medida que se acerca la fecha de votación, se vislumbran tendencias
         claras y una gran participación de la comunidad.
