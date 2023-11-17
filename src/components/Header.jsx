@@ -26,6 +26,7 @@ export default function Header() {
       </AppBar>
       <Box
         display="flex"
+        flexWrap="wrap"
         justifyContent="center"
         borderBottom="1px solid #f7f6f5"
         px={2}

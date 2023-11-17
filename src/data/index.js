@@ -34,6 +34,8 @@ import Aura from '../news/Aura'
 import auraImg from '../assets/news/aura/1.jpeg'
 import FabianFair from '../entrepeneurship/FabianFair'
 import fabianFairImg from '../assets/entrepeneurship/fabian/1.png'
+import VictorNews from '../news/VictorNews'
+import victorNewsImg from '../assets/news/victor/1.png'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -97,6 +99,14 @@ export const news = [
     id: 'maluma-sera-papa',
     author: authors.aura,
     previewImage: auraImg,
+  },
+  {
+    component: VictorNews,
+    title:
+      'Barranquilla Inaugura Moderna Área de Recreación en el Parque Metropolitano',
+    id: 'area-de-recreacion-en-barranquilla',
+    author: authors.victor,
+    previewImage: victorNewsImg,
   },
 ]
 
