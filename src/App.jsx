@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Container, Typography } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
-import { entrepeneurship, news, opinion } from './data'
+import { entrepeneurship, infographics, news, opinion } from './data'
 import ArticlePreview from './components/ArticlePreview'
 
 function App() {
@@ -37,6 +37,18 @@ function App() {
       </Box>
       <Grid container spacing={2} mb={6}>
         {entrepeneurship.map((n) => {
+          return (
+            <Grid key={n.id} xs={6} sm={4} md={3}>
+              <ArticlePreview {...n} />
+            </Grid>
+          )
+        })}
+      </Grid>
+      <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
+        <Typography variant="h4">Infografías</Typography>
+      </Box>
+      <Grid container spacing={2} mb={6}>
+        {infographics.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>
               <ArticlePreview {...n} />

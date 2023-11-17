@@ -28,6 +28,8 @@ import marcoNewsImg from '../assets/news/marco/1.png'
 import MarcoNews from '../news/MarcoNews'
 import MarcoFair from '../entrepeneurship/MarcoFair'
 import victorFairImg from '../assets/entrepeneurship/marco/1.png'
+import orlandoImg from '../assets/infographics/orlando/1.jpeg'
+import Orlando from '../infographics/Orlando'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -153,5 +155,15 @@ export const entrepeneurship = [
     author: authors.marco,
     previewImage: victorFairImg,
     imgStyles: { objectPosition: 'top center' },
+  },
+]
+
+export const infographics = [
+  {
+    component: Orlando,
+    title: 'Barranquilla, la ciudad de la alegría',
+    id: 'barranquilla-ciudad-de-la-alegria',
+    author: authors.orlando,
+    previewImage: orlandoImg,
   },
 ]
