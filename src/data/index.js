@@ -40,6 +40,8 @@ import YerikaInterview from '../interviews/YerikaInterview'
 import yerikaImg from '../assets/interviews/yerika/1.jpeg'
 import VictorCritica from '../critica/VictorCritica'
 import victorCriticaImg from '../assets/critica/victor/1.jpeg'
+import YerikaCronica from '../cronica/YerikaCronica'
+import yerikaCronicaImg from '../assets/cronica/yerika/1.png'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -52,6 +54,16 @@ export const authors = {
   victor: 'Victor Roa',
   marco: 'Marco Castro',
 }
+
+export const cronica = [
+  {
+    component: YerikaCronica,
+    title: 'Pasión y resiliencia, el legado de Alejandra Villafañe',
+    id: 'legado-de-alejandra-villafane',
+    author: authors.yerika,
+    previewImage: yerikaCronicaImg,
+  },
+]
 
 export const news = [
   {

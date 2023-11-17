@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom'
 export default function ArticlePreview({
   id,
   title,
-  previewImage,
+  previewImage = 'https://picsum.photos/200/300',
   author,
   imgStyles = {},
 }) {

@@ -3,6 +3,7 @@ import { Box, Container, Typography } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
 import {
   critica,
+  cronica,
   entrepeneurship,
   infographics,
   interviews,
@@ -18,6 +19,28 @@ import SectionHeader from './components/SectionHeader'
 function App() {
   return (
     <Container maxWidth="lg" sx={{ py: 4 }} className="fade-animate">
+      <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
+        <Typography variant="h4">Noticias</Typography>
+      </Box>
+      <Grid container spacing={2} mb={6}>
+        {news.map((n) => {
+          return (
+            <Grid key={n.id} xs={6} sm={4} md={3}>
+              <ArticlePreview {...n} />
+            </Grid>
+          )
+        })}
+      </Grid>
+      <SectionHeader>Crónica</SectionHeader>
+      <Grid container spacing={2} mb={6}>
+        {cronica.map((n) => {
+          return (
+            <Grid key={n.id} xs={6} sm={4} md={3}>
+              <ArticlePreview {...n} />
+            </Grid>
+          )
+        })}
+      </Grid>
       <SectionHeader>Reportaje</SectionHeader>
       <Grid container spacing={2} mb={6}>
         {reportaje.map((n) => {
@@ -55,18 +78,6 @@ function App() {
       </Box>
       <Grid container spacing={2} mb={6}>
         {opinionColumn.map((n) => {
-          return (
-            <Grid key={n.id} xs={6} sm={4} md={3}>
-              <ArticlePreview {...n} />
-            </Grid>
-          )
-        })}
-      </Grid>
-      <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
-        <Typography variant="h4">Noticias</Typography>
-      </Box>
-      <Grid container spacing={2} mb={6}>
-        {news.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>
               <ArticlePreview {...n} />

@@ -5,6 +5,7 @@ import App from './App.jsx'
 import Header from './components/Header.jsx'
 import {
   critica,
+  cronica,
   entrepeneurship,
   infographics,
   interviews,
@@ -30,6 +31,7 @@ import Critica from './views/Critica.jsx'
 import Reportaje from './views/Reportaje.jsx'
 import Investigacion from './views/Investigacion.jsx'
 import OpinionColumns from './views/OpinionColumns.jsx'
+import Cronica from './views/Cronica.jsx'
 
 let theme = createTheme({
   palette: {
@@ -54,6 +56,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Header />
         <Routes>
           <Route path="/" element={<App />} />
+          <Route path="/cronica" element={<Cronica />} />
           <Route path="/noticias" element={<News />} />
           <Route path="/columna" element={<Columns />} />
           <Route path="/columna-de-opinion" element={<OpinionColumns />} />
@@ -64,6 +67,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/reportaje" element={<Reportaje />} />
           <Route path="/investigacion" element={<Investigacion />} />
 
+          {cronica.map(({ id, component: Component }) => {
+            return <Route path={id} element={<Component />} key={id} />
+          })}
           {news.map(({ id, component: Component }) => {
             return <Route path={id} element={<Component />} key={id} />
           })}

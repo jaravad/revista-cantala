@@ -35,6 +35,20 @@ export default function Header() {
       >
         <Button
           onClick={() => {
+            navigate('/noticias')
+          }}
+        >
+          Noticias
+        </Button>
+        <Button
+          onClick={() => {
+            navigate('/cronica')
+          }}
+        >
+          Cronica
+        </Button>
+        <Button
+          onClick={() => {
             navigate('/reportaje')
           }}
         >
@@ -47,13 +61,7 @@ export default function Header() {
         >
           Entrevistas
         </Button>
-        <Button
-          onClick={() => {
-            navigate('/noticias')
-          }}
-        >
-          Noticias
-        </Button>
+
         <Button
           onClick={() => {
             navigate('/columna')
