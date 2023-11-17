@@ -9,7 +9,7 @@ const Interviews = () => {
   return (
     <ArticleWrapper>
       <SectionHeader>Entrevistas</SectionHeader>
-      <Grid container spacing={2} mb={6}>
+      <Grid container spacing={2} mb={6} justifyContent="center">
         {interviews.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4}>

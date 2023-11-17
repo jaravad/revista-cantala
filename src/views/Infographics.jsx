@@ -11,7 +11,7 @@ const Infographics = () => {
       <SectionHeader>
         <Typography variant="h4">Infografías</Typography>
       </SectionHeader>
-      <Grid container spacing={2} mb={6}>
+      <Grid container spacing={2} mb={6} justifyContent="center">
         {infographics.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4}>

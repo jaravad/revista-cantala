@@ -9,7 +9,7 @@ const Critica = () => {
   return (
     <ArticleWrapper>
       <SectionHeader>Critica</SectionHeader>
-      <Grid container spacing={2} mb={6}>
+      <Grid container spacing={2} mb={6} justifyContent="center">
         {critica.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4}>

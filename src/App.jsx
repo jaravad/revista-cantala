@@ -22,7 +22,7 @@ function App() {
       <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
         <Typography variant="h4">Noticias</Typography>
       </Box>
-      <Grid container spacing={2} mb={6}>
+      <Grid container spacing={2} mb={6} justifyContent="center">
         {news.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>
@@ -32,7 +32,7 @@ function App() {
         })}
       </Grid>
       <SectionHeader>Crónica</SectionHeader>
-      <Grid container spacing={2} mb={6}>
+      <Grid container spacing={2} mb={6} justifyContent="center">
         {cronica.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>
@@ -42,7 +42,7 @@ function App() {
         })}
       </Grid>
       <SectionHeader>Reportaje</SectionHeader>
-      <Grid container spacing={2} mb={6}>
+      <Grid container spacing={2} mb={6} justifyContent="center">
         {reportaje.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>
@@ -52,7 +52,7 @@ function App() {
         })}
       </Grid>
       <SectionHeader>Entrevistas</SectionHeader>
-      <Grid container spacing={2} mb={6}>
+      <Grid container spacing={2} mb={6} justifyContent="center">
         {interviews.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>
@@ -64,7 +64,7 @@ function App() {
       <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
         <Typography variant="h4">Columna</Typography>
       </Box>
-      <Grid container spacing={2} mb={6}>
+      <Grid container spacing={2} mb={6} justifyContent="center">
         {opinion.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>
@@ -76,7 +76,7 @@ function App() {
       <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
         <Typography variant="h4">Columna de opinión</Typography>
       </Box>
-      <Grid container spacing={2} mb={6}>
+      <Grid container spacing={2} mb={6} justifyContent="center">
         {opinionColumn.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>
@@ -89,7 +89,7 @@ function App() {
       <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
         <Typography variant="h4">Emprendimiento</Typography>
       </Box>
-      <Grid container spacing={2} mb={6}>
+      <Grid container spacing={2} mb={6} justifyContent="center">
         {entrepeneurship.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>
@@ -101,7 +101,7 @@ function App() {
       <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
         <Typography variant="h4">Crítica</Typography>
       </Box>
-      <Grid container spacing={2} mb={6}>
+      <Grid container spacing={2} mb={6} justifyContent="center">
         {critica.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>
@@ -113,7 +113,7 @@ function App() {
       <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
         <Typography variant="h4">Infografías</Typography>
       </Box>
-      <Grid container spacing={2} mb={6}>
+      <Grid container spacing={2} mb={6} justifyContent="center">
         {infographics.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>
@@ -125,7 +125,7 @@ function App() {
       <Box borderBottom="1px solid #e4e4e4" pb={2} textAlign="center" mb={3}>
         <Typography variant="h4">Columna de Investigación</Typography>
       </Box>
-      <Grid container spacing={2} mb={6}>
+      <Grid container spacing={2} mb={6} justifyContent="center">
         {investigacion.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4} md={3}>

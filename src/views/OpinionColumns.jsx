@@ -9,7 +9,7 @@ const OpinionColumns = () => {
   return (
     <ArticleWrapper>
       <SectionHeader>Columnna de opinión</SectionHeader>
-      <Grid container spacing={2} mb={6}>
+      <Grid container spacing={2} mb={6} justifyContent="center">
         {opinionColumn.map((n) => {
           return (
             <Grid key={n.id} xs={6} sm={4}>

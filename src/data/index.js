@@ -43,6 +43,12 @@ import victorCriticaImg from '../assets/critica/victor/1.jpeg'
 import YerikaCronica from '../cronica/YerikaCronica'
 import yerikaCronicaImg from '../assets/cronica/yerika/1.png'
 import AuraFair from '../entrepeneurship/Aurafair'
+import YerikaFair from '../entrepeneurship/YerikaFair'
+import yerikaFairImg from '../assets/entrepeneurship/yerika/1.png'
+import MelanyFair from '../entrepeneurship/MelanyFair'
+import melanyFairImg from '../assets/entrepeneurship/melany/1.png'
+import orlandoFairImg from '../assets/entrepeneurship/orlando/2.png'
+import OrlandoFair from '../entrepeneurship/OrlandoFair'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -217,6 +223,28 @@ export const entrepeneurship = [
     title: 'Marca de Ropa de Monica y Sara',
     id: 'emprendimiento-monica-y-sara',
     author: authors.aura,
+  },
+  {
+    component: YerikaFair,
+    title: 'Micro negocios en la Universidad Minuto de Dios',
+    id: 'micronegocios-en-uniminuto',
+    previewImage: yerikaFairImg,
+    author: authors.yerika,
+  },
+  {
+    component: MelanyFair,
+    title: 'Diseñando arte',
+    id: 'diseñando-arte',
+    previewImage: melanyFairImg,
+    author: authors.melany,
+  },
+  {
+    component: OrlandoFair,
+    title: 'Feria de Emprendimiento Caribe 2023',
+    id: 'emprendimiento-creaciones-licemary',
+    previewImage: orlandoFairImg,
+    author: authors.orlando,
+    imgStyles: { objectPosition: 'top center' },
   },
 ]
 
