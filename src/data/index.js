@@ -123,18 +123,21 @@ export const news = [
 
 export const opinion = [
   {
-    component: Char,
-    title: 'Primer secretario nombrado por Alejandro Char',
-    id: 'char-anuncia-nuevo-secretario',
-    author: authors.vale,
-    previewImage: char,
-  },
-  {
     component: FabianOpinion,
     title: 'El papel de la tecnología en la educación',
     id: 'tecnologia-en-la-educacion',
     author: authors.fabian,
     previewImage: fabianOpinion,
+  },
+]
+
+export const opinionColumn = [
+  {
+    component: Char,
+    title: 'Primer secretario nombrado por Alejandro Char',
+    id: 'char-anuncia-nuevo-secretario',
+    author: authors.vale,
+    previewImage: char,
   },
 ]
 

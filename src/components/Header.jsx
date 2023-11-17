@@ -35,6 +35,20 @@ export default function Header() {
       >
         <Button
           onClick={() => {
+            navigate('/reportaje')
+          }}
+        >
+          Reportaje
+        </Button>
+        <Button
+          onClick={() => {
+            navigate('/entrevistas')
+          }}
+        >
+          Entrevistas
+        </Button>
+        <Button
+          onClick={() => {
             navigate('/noticias')
           }}
         >
@@ -46,6 +60,13 @@ export default function Header() {
           }}
         >
           Columna
+        </Button>
+        <Button
+          onClick={() => {
+            navigate('/columna-de-opinion')
+          }}
+        >
+          Columna de opinión
         </Button>
         <Button
           onClick={() => {
@@ -67,13 +88,6 @@ export default function Header() {
           }}
         >
           Infografías
-        </Button>
-        <Button
-          onClick={() => {
-            navigate('/entrevistas')
-          }}
-        >
-          Entrevistas
         </Button>
         <Button
           onClick={() => {

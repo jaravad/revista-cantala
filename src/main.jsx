@@ -11,6 +11,7 @@ import {
   investigacion,
   news,
   opinion,
+  opinionColumn,
 } from './data'
 
 import { red } from '@mui/material/colors'
@@ -28,6 +29,7 @@ import Interviews from './views/Interviews.jsx'
 import Critica from './views/Critica.jsx'
 import Reportaje from './views/Reportaje.jsx'
 import Investigacion from './views/Investigacion.jsx'
+import OpinionColumns from './views/OpinionColumns.jsx'
 
 let theme = createTheme({
   palette: {
@@ -54,16 +56,21 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/" element={<App />} />
           <Route path="/noticias" element={<News />} />
           <Route path="/columna" element={<Columns />} />
+          <Route path="/columna-de-opinion" element={<OpinionColumns />} />
           <Route path="/emprendimiento" element={<Entrepeneurship />} />
           <Route path="/infografias" element={<Infographics />} />
           <Route path="/entrevistas" element={<Interviews />} />
           <Route path="/critica" element={<Critica />} />
           <Route path="/reportaje" element={<Reportaje />} />
           <Route path="/investigacion" element={<Investigacion />} />
+
           {news.map(({ id, component: Component }) => {
             return <Route path={id} element={<Component />} key={id} />
           })}
           {opinion.map(({ id, component: Component }) => {
+            return <Route path={id} element={<Component />} key={id} />
+          })}
+          {opinionColumn.map(({ id, component: Component }) => {
             return <Route path={id} element={<Component />} key={id} />
           })}
           {entrepeneurship.map(({ id, component: Component }) => {
