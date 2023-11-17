@@ -12,7 +12,7 @@ import secondImg from '../assets/news/cris/2.png'
 const WomenWhoInspire = () => {
   return (
     <ArticleWrapper>
-      <Title>Mujeres que inspiran</Title>
+      <Title>Mujeres que inspiran: Yuruby Mendoza Ricardo</Title>
       <AuthorLine>{authors.cris}</AuthorLine>
       <Subheader>
         "Soy una mujer apasionada por su carrera, amo contar historias y hoy

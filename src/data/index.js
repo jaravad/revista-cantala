@@ -36,6 +36,8 @@ import FabianFair from '../entrepeneurship/FabianFair'
 import fabianFairImg from '../assets/entrepeneurship/fabian/1.png'
 import VictorNews from '../news/VictorNews'
 import victorNewsImg from '../assets/news/victor/1.png'
+import YerikaInterview from '../interviews/YerikaInterview'
+import yerikaImg from '../assets/interviews/yerika/1.jpeg'
 
 export const authors = {
   cris: 'Cristian Alvarez',
@@ -195,8 +197,15 @@ export const interviews = [
   {
     component: WomenWhoInspire,
     id: 'mujeres-que-inspiran',
-    title: 'Mujeres que inspiran',
+    title: 'Mujeres que inspiran: Yuruby Mendoza Ricardo',
     author: authors.cris,
     previewImage: women,
+  },
+  {
+    component: YerikaInterview,
+    id: 'reinado-popular',
+    title: 'Mujeres que inspiran: Reinado Popular',
+    author: authors.yerika,
+    previewImage: yerikaImg,
   },
 ]
